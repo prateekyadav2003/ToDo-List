@@ -1,0 +1,57 @@
+body.dark-mode nav {
+    color:black;
+    background-color: #9fd08e; /* Light mode nav color */
+}
+body.dark-mode .menu a{
+    color:black;
+}
+body.dark-mode .heading{
+    color:white;
+}
+body.dark-mode .input {
+    background-color: #ffff;
+    color:black;
+    border: 1px solid #666;
+}
+body.dark-mode .contaner{
+    color:white;
+    background-color: #343a40;
+}
+body.dark-mode .btn {
+    background-color: #9fd08e;
+    border: none;
+    color: black;
+}
+body.dark-mode .delete{
+    color:black;
+    background-color: #9fd08e;
+}
+body.dark-mode .delete:hover{
+    background-color:red;
+}
+body.dark-mode .listItems li {
+    color: white;
+}
+body.dark-mode .contact{
+    color:black;
+    background-color: #9fd08e;
+}
+body.dark-mode .contact .p1{
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+body.dark-mode .contact a{
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+}
+body.dark-mode .fa-linkedin{
+    color: black;
+    padding: 15px;
+}
+
+body.dark-mode .fa-github{
+    color: black;
+    padding: 15px;
+}

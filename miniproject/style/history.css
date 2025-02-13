@@ -1,0 +1,277 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 80vh;
+    background-color: #e4e9f7;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.5vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(76,68,182,0.808);
+}
+/*------dark/light mode------*/
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+    color:white;
+    
+}
+
+.menu a{
+    padding: 5px;
+    padding-bottom: 10px;
+    color: #ffff;
+}
+
+.menu i{
+    padding: 5px;
+}
+
+.homePage{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.contaner{
+    background-color:  #fdfdfd;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+    0 32px 64px -48px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    width: 40%;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+.heading{
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+    color:#000;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+}
+
+.inputDiv{
+    margin: 0px 10px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input{
+    border: 1px solid #ccc;
+    outline: none;
+    height:24px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 24px;
+    padding: 0;
+    border:none;
+    border-radius: 10px;
+    color:white;
+    background-color:rgba(76,68,182,0.808);
+    margin-left: 8px;
+    margin-top: 5px; 
+    cursor:pointer;
+}
+ul#taskList{
+    padding:10px;
+}
+
+.listItems{
+    width: 40%;
+    margin: 20px;
+    padding:10px 20px;
+    padding-top: 0;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.contact{
+    color: white;
+    background-color:rgba(76,68,182,0.808);
+    height:fit-content;
+    width: 100%;
+    display: inline-block;
+    padding:15px;
+    position: static;
+    margin-top: 30vh;
+
+}
+
+.contact .p1{
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+.contact a{
+    color: white;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.fa-linkedin{
+    color: white;
+    padding: 10px;
+}
+
+.fa-github{
+    color: white;
+    padding: 10px;
+}
+
+.contact h5{
+    font-size: 15px;
+    margin:10px;
+    padding:10px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.listItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e6e6e6; /* Optional: for a visual separator between items */
+    width: 100%; /* Ensures it takes full width available */
+    margin: 10px 0;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listItems ul{
+    margin-left: 40px;
+    padding: 30px;
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delete {
+    margin-left: 40px;
+    width:80px;
+    height: 22px;
+    font-size: 14px;
+    background-color: rgba(76,68,182,0.808);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: flex-end;
+}
+
+.delete:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.btn:hover {
+    opacity: 0.82; 
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Wider on smaller screens */
+    }
+
+    .navbar {
+        font-size: 2vh; /* Smaller font size for smaller devices */
+    }
+
+    .inputDiv {
+        flex-direction: column; /* Stack input and button vertically */
+        align-items: center; /* Center align */
+    }
+
+    .inputDiv input{
+        width: 100%;
+    }
+
+    .heading{
+        font-size: 23px;
+    }
+
+    .btn {
+        width: 100%; /* Full-width button */
+        height: 22px;
+        margin-left: 0; /* Remove left margin */
+        margin-top: 5px;
+    }
+
+    .contact{
+        background-color:rgba(76,68,182,0.808);
+    }
+
+    .contact h5{
+        font-size: 12px;
+    }
+
+    .contact p{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .listItems {
+        width: 40%;
+        margin: 10px;
+        padding:10px;
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+    .listItems ul{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+}
+
+
+
+
